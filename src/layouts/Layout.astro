@@ -1,9 +1,11 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+// Supports weights 100-900
+import "@fontsource-variable/noto-sans";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -11,46 +13,91 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="Carla Planifica tu Éxito" content="¿Sueñas con una vida sin preocupaciones financieras?  Te Ayudaré a convertir tus sueños en realidad. Solicita una consulta gratuita ahora." />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-		<Footer />
-		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Carla Planifica tu Éxito"
+      content="¿Sueñas con una vida sin preocupaciones financieras?  Te Ayudaré a convertir tus sueños en realidad. Solicita una consulta gratuita ahora."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		/* background: #13151a; */
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+
+  @font-face {
+    font-family: "NourdBold";
+    src: url("/nourd_bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+  body {
+    font-family: "Noto Sans Variable", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "NourdBold", sans-serif;
+  }
+
+  h1 {
+    font-size: 2em; /* El tamaño de fuente de h1 será el doble del tamaño de fuente del elemento padre */
+  }
+
+  h2 {
+    font-size: 1.5em; /* El tamaño de fuente de h2 será 1.5 veces el tamaño de fuente del elemento padre */
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 0.9em;
+  }
 </style>

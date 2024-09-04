@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/noto-sans": "^5.0.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.14.5",
@@ -24,6 +25,8 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.14"
+    "@tailwindcss/typography": "^0.5.14",
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3"
   }
 }

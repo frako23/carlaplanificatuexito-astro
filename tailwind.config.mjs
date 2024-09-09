@@ -10,7 +10,7 @@ export default {
         grey: "#c2c5cc",
         middleBlue: "#8dd9cc",
         darkBlue: "#23284f",
-        yellow: "#e1ad01",
+        // yellow: "#e1ad01",
       },
     },
   },

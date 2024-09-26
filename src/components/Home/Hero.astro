@@ -1,5 +1,7 @@
 ---
+  import Modal from "../utils/Modal.astro";
 
+  import {messages} from  "../../utils/const.ts"
 ---
 
 <main class="flex justify-between max-w-7xl p-20">
@@ -24,7 +26,7 @@
     </p>
   </br>
   <div class="flex justify-center w-full">
-    <button class="bg-darkBlue hover:bg-middleBlue hover:text-darkBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ">Agenda una Consulta</button>
+    <Modal title={messages.agenda} />
   </div>
   </div>
 </main>

@@ -4,7 +4,7 @@
   import {messages} from  "../../utils/const.ts"
 ---
 
-<main class="md:flex justify-between max-w-7xl p-20">
+<main class="md:flex justify-between max-w-7xl md:p-20 p-10">
   <div class="md:w-1/4 flex flex-col justify-center">
     <h1 class="text-center text-5xl">¡Hola! Soy Carla Loyo</h1>
   
@@ -43,5 +43,13 @@
     margin-left: 30px;
     margin-bottom: 95px;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 600px) {
+.hero-paragraph{
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
   }
 </style>

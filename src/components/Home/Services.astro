@@ -1,27 +1,27 @@
 ---
 import Modal from "../utils/Modal.astro";
 
-import {messages} from  "../../utils/const.ts"
+import { messages } from "../../utils/const.ts";
 ---
 
-<section class="max-w-7xl md:p-20 p-10">
+<section class="max-w-7xl md:px-20 p-10">
   <h1 class="text-4xl">Servicios</h1>
   <ol>
     <li>
-      <strong>Orientación Profesional:</strong> Recibe asesoría personalizada para organizar y
-      gestionar tus finanzas de manera efectiva.
+      <strong>Orientación Profesional:</strong> Recibe asesoría personalizada para
+      organizar y gestionar tus finanzas de manera efectiva.
     </li>
     <li>
-      <strong>Soluciones Personalizadas:</strong>Adaptamos nuestras estrategias a tus necesidades
-      específicas.
+      <strong>Soluciones Personalizadas:</strong>Adaptamos nuestras estrategias
+      a tus necesidades específicas.
     </li>
     <li>
-      <strong>Respaldo Financiero:</strong>Protege a tu familia con un respaldo financiero
-      sólido.
+      <strong>Respaldo Financiero:</strong>Protege a tu familia con un respaldo
+      financiero sólido.
     </li>
     <li>
-      <strong>Planificación Estratégica:</strong>Te ayudo a organizar tus metas y comprometerte
-      con ellas.
+      <strong>Planificación Estratégica:</strong>Te ayudo a organizar tus metas
+      y comprometerte con ellas.
     </li>
   </ol>
   <p class="my-8">
@@ -29,11 +29,13 @@ import {messages} from  "../../utils/const.ts"
     lo que te propones:
   </p>
   <i
-    ><strong>"La Planificación a largo plazo no es pensar en decisiones futuras, sino en
-      el futuro de las decisiones presentes"</strong> Peter Drucker</i
+    ><strong
+      >"La Planificación a largo plazo no es pensar en decisiones futuras, sino
+      en el futuro de las decisiones presentes"</strong
+    > Peter Drucker</i
   >
-  <div class="my-8  flex justify-center">
-    <Modal title={messages.agenda}/>
+  <div class="my-4 flex justify-center">
+    <Modal title={messages.agenda} />
   </div>
 </section>
 
@@ -51,8 +53,8 @@ import {messages} from  "../../utils/const.ts"
     box-sizing: border-box;
   }
   ol {
-  padding-left: 2rem;
-  list-style-type: decimal;
-  margin-block: 2rem;
-}
+    padding-left: 2rem;
+    list-style-type: decimal;
+    margin-block: 2rem;
+  }
 </style>

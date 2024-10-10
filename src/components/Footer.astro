@@ -95,39 +95,45 @@ import Linkedin from "../utils/icons/Linkedin.astro";
             class="aspect-auto w-auto h-[42rem]"
           />
         </div>
-        <div class="md:w-[45%] md:p-5">
-          <h3 class="text-sm mt-8">
-            "Algunas personas quieren que sucedan las cosas, otras desean que
-            sucedan las cosas y otras hacen que sucedan las cosas"
-          </h3>
-          <span>Michael Jordan</span>
-          <h1 class="mt-8 mb-4 text-2xl">Contáctame</h1>
-          <ul>
-            <li>
-              <a
-                href="https://wa.me/541155095905"
-                class="flex justify-start gap-4 my-8 hover:font-bold"
-                ><NewWhatsapp />+54-1155095905</a
-              >
-            </li>
-            <li class="flex justify-start gap-4 my-8 hover:font-bold">
-              <NewMail />cloyocitizens@gmail.com
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/carlaplanificatuexito/"
-                class="flex justify-start gap-4 my-8 hover:font-bold"
-                ><Instagram />@carlaplanificatuexito</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/carla-loyo-miot/"
-                class="flex justify-start gap-4 my-8 hover:font-bold"
-                ><Linkedin />Carla Loyo Miot</a
-              >
-            </li>
-          </ul>
+        <div class="md:w-[45%] md:p-5 flex flex-col justify-evenly">
+          <div>
+            <h3 class="text-sm mt-8 italic">
+              "Algunas personas quieren que sucedan las cosas, otras desean que
+              sucedan las cosas y otras hacen que sucedan las cosas"
+            </h3>
+            <span class="font-bold text-xl">Michael Jordan</span>
+          </div>
+          <div>
+            <h1 class="mt-8 text-2xl font-bold">Contáctame</h1>
+            <ul>
+              <li>
+                <a
+                  href="https://wa.me/541155095905"
+                  class="flex justify-start gap-4 my-4 hover:font-bold"
+                  ><NewWhatsapp />+54-1155095905</a
+                >
+              </li>
+              <a href="mailto:info@carlaplanificatuexito">
+                <li class="flex justify-start gap-4 my-4 hover:font-bold">
+                  <NewMail />info@carlaplanificatuexito
+                </li>
+              </a>
+              <li>
+                <a
+                  href="https://www.instagram.com/carlaplanificatuexito/"
+                  class="flex justify-start gap-4 my-4 hover:font-bold"
+                  ><Instagram />@carlaplanificatuexito</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/carla-loyo-miot/"
+                  class="flex justify-start gap-4 my-4 hover:font-bold"
+                  ><Linkedin />Carla Loyo Miot</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

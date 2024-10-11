@@ -1,0 +1,129 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!-- Modal toggle -->
+<button
+  data-modal-target="default-modal"
+  data-modal-toggle="default-modal"
+  class="hover:bg-grey bg-darkBlue text-grey hover:text-darkBlue hover:border-darkBlue hover:border-2 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+  type="button"
+>
+  {title}
+</button>
+
+<!-- Main modal -->
+<div
+  id="default-modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
+  <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <!-- Modal header -->
+      <div
+        class="bg-middleBlue flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+      >
+        <img src="/logo2.avif" alt="" class="h-20" />
+        <h3
+          class="text-xl font-semibold text-gray-900 text-center dark:text-white"
+        >
+          ¿Listo para dar el primer paso?
+        </h3>
+        <button
+          type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="default-modal"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div>
+        <form class="bg-white shadow-md rounded px-16 pt-6 pb-8 mb-4">
+          <h4 class="block text-gray-700 text-center font-bold mb-4">
+            Contáctame hoy para obtener más información o para programar una
+            cita.
+          </h4>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="username"
+            >
+              Nombre
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="text"
+              placeholder="Tú Nombre"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="password"
+            >
+              Email
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="password"
+              type="email"
+              placeholder="Tú Email Aquí"
+            />
+            <!-- <p class="text-red-500 text-xs italic">
+                        Please choose a password.
+                      </p> -->
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="password"
+            >
+              Mensaje
+            </label>
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline h-28"
+              id="password"
+              placeholder="Tú Mensaje Aquí"></textarea>
+            <!-- <p class="text-red-500 text-xs italic">
+                        Please choose a password.
+                      </p> -->
+          </div>
+          <div
+            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+          >
+            <button
+              class="bg-darkBlue hover:bg-middleBlue hover:text-darkBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44"
+              type="button"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modal footer -->
+  </div>
+</div>

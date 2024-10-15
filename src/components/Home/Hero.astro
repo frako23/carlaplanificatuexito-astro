@@ -4,18 +4,15 @@ import Modal from "../utils/Modal.astro";
 import { messages } from "../../utils/const.ts";
 ---
 
-<main class="md:flex justify-between max-w-7xl md:p-20 p-10">
-  <div class="md:w-1/4 flex flex-col justify-center">
-    <h1 class="text-center text-5xl title">¡Hola! Soy Carla Loyo</h1>
-  </div>
-  <div class="md:w-1/2 flex flex-col justify-center">
+<main class="md:flex justify-between max-w-7xl">
+  <div class="flex flex-col justify-center">
     <img
-      src="/imgs/carla-hero.avif"
+      src="/imgs/carla-hero2.jpg"
       alt="Foto de Carla Loyo"
       class="md:px-24"
     />
   </div>
-  <div class="md:w-1/4 hero-paragraph">
+  <div class="md:w-1/4 hero-paragraph md:p-24 p-12">
     <h1 class="text-center text-4xl title">
       ¡Bienvenido a tu futuro financiero!
     </h1>
@@ -40,19 +37,9 @@ import { messages } from "../../utils/const.ts";
     align-items: flex-start;
     text-align: left;
     width: 100%;
-    max-width: 370px;
     position: relative;
-    margin-left: 30px;
     justify-content: center;
     box-sizing: border-box;
-  }
-
-  @media (max-width: 600px) {
-    .hero-paragraph {
-      margin-left: 0;
-      margin-bottom: 0;
-      margin-top: 3rem;
-    }
   }
 
   .title {

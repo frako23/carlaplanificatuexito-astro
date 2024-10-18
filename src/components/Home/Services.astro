@@ -4,9 +4,34 @@ import Modal from "../utils/Modal.astro";
 import { messages } from "../../utils/const.ts";
 ---
 
-<section class="max-w-7xl md:px-20 p-10">
+<section class="max-w-7xl md:px-20 px-10 pt-10">
   <h1 class="text-4xl title">Servicios</h1>
-  <ol>
+  <br />
+  <p class="font-bold">
+    ¿Te sientes perdido en el mundo de las finanzas y preocupado por el futuro
+    de tu familia?
+  </p>
+  <br />
+  <p>
+    Mi misión es convertirme en tu aliada para transformar esa ansiedad en
+    confianza. Juntos, evaluaremos dónde estás y trazaremos un plan a tu medida
+    que te permita ahorrar, invertir y proteger a tus seres queridos. Con
+    asesoría continua, aprenderás a manejar tus finanzas con claridad y a
+    disfrutar del presente sin miedo. ¡Es momento de construir el futuro que
+    merece
+  </p>
+  <br />
+  <p>
+    Y para comenzar, te ofrezco una primera asesoría gratuita de 1 hora.
+    Simplemente completa el formulario y déjame un mensaje donde me cuentes cómo
+    puedo ayudarte. ¡No esperes más para tomar el control de tu vida financiera!
+  </p>
+  <br />
+  <p>
+    Usa el Super Poder de la Planificación para garantizar que puedes alcanzar
+    lo que te propones.
+  </p>
+  <!-- <ol>
     <li>
       <strong>Orientación Profesional:</strong> Recibe asesoría personalizada para
       organizar y gestionar tus finanzas de manera efectiva.
@@ -23,21 +48,26 @@ import { messages } from "../../utils/const.ts";
       <strong>Planificación Estratégica:</strong>Te ayudo a organizar tus metas
       y comprometerte con ellas.
     </li>
-  </ol>
-  <p class="my-8">
+  </ol> -->
+  <!-- <p class="my-8">
     Usa el Super Poder de la Planificación para garantizar que puedes alcanzar
     lo que te propones:
-  </p>
-  <i
-    ><strong
-      >"La Planificación a largo plazo no es pensar en decisiones futuras, sino
-      en el futuro de las decisiones presentes"</strong
-    > Peter Drucker</i
-  >
-  <div class="my-4 flex justify-center">
-    <Modal title={messages.asesorar} />
+  </p> -->
+  <div class="mt-8 flex flex-col justify-center w-full text-center">
+    <i
+      ><strong
+        >"La Planificación a largo plazo no es pensar en decisiones futuras,
+        sino en el futuro de las decisiones presentes"</strong
+      >
+    </i>
+
+    <span class="text-xl"><i>Peter Druker</i></span>
   </div>
 </section>
+
+<div class="flex justify-center p-10">
+  <Modal title={messages.asesorar} />
+</div>
 
 <style>
   .hero-paragraph {

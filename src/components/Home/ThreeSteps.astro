@@ -12,12 +12,12 @@ import Modal2 from "../utils/Modal2.astro";
     ¿Cómo te ayudo a Tomar el Control de tus Finanzas?
   </h1>
   <p class="my-8 text-2xl title">Empieza con estos 3 Pasos Clave</p>
-  <div class="md:flex justify-between gap-8">
-    <article class="md:w-1/3 mb-8 md:mb-0">
+  <div class="lg:flex justify-between gap-8">
+    <article class="lg:w-1/3 mb-8 lg:mb-0">
       <div>
         <div>
           <div>
-            <figure>
+            <figure class="flex justify-center lg:block">
               <img src="/imgs/paso1.avif" alt="" class="h-[215px]" />
             </figure>
           </div>
@@ -27,15 +27,64 @@ import Modal2 from "../utils/Modal2.astro";
         </div>
       </div>
       <div>
-        <div class="h-[500px]">
+        <div class="lg:h-[580px] h-auto">
           <h2 class="my-8 text-xl">
-            <strong>Paso 1:</strong> Define tus Metas
+            <strong>Paso 1:</strong> Agenda tu Consulta Gratuita
+          </h2>
+          <h3 class="mb-8 text-lg font-bold">
+            ¡Tu éxito financiero comienza aquí!
+          </h3>
+          <p>
+            La planificación efectiva es tu superpoder. Estoy aquí para guiarte
+            en cada paso, y que puedas obtener la claridad que necesitas para
+            definir tus metas y entender cómo simplificar tu presupuesto
+          </p>
+          <br />
+          <p class="font-bold">
+            Agenda tu cita gratuita y recibe asesoramiento especializado.
+          </p>
+          <p>
+            Juntos, implementaremos un plan que te brindará la tranquilidad de
+            proteger lo que tienes y alcanzar tus metas. ¡No esperes más! Da el
+            primer paso hacia un futuro financiero seguro.
+          </p>
+          <!-- <ul>
+            <li>Organizar tu presupuesto</li>
+            <li>Visualizar cómo estás usando tu dinero</li>
+            <li>Redirigir tus recursos hacia lo que realmente importa</li>
+            <li>Cómo ahorrar</li>
+            <li>Pagar tus deudas</li>
+          </ul> -->
+        </div>
+        <div class="flex justify-center w-full p-5 lg:p-0">
+          <Modal2 title={messages.asesorar} />
+        </div>
+      </div>
+    </article>
+    <article class="lg:w-1/3 mb-8 lg:mb-0">
+      <div>
+        <div>
+          <div>
+            <figure class="flex justify-center lg:block">
+              <img src="/imgs/paso2.avif" class="h-[215px]" alt="" />
+            </figure>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="lg:h-[580px] h-auto">
+          <h2 class="my-8 text-xl">
+            <strong>Paso 2:</strong> Define tus Metas
           </h2>
           <h3 class="mb-8 text-lg font-bold">
             ¿Qué necesitas para disfrutar de la vida?
           </h3>
           <p>
-            Sin metas claras, es fácil sentirse perdido. ¡Pero no te preocupes!
+            Estar tranquilo, y sin metas claras, es fácil sentirse perdido. Si
+            estás listo para definirlas
           </p>
           <br />
           <p class="font-bold">Descarga esta guía gratuita y aprende a:</p>
@@ -47,55 +96,16 @@ import Modal2 from "../utils/Modal2.astro";
             <li>Pagar tus deudas</li>
           </ul>
         </div>
-        <div class="flex justify-center w-full">
+        <div class="flex justify-center w-full p-5 lg:p-0">
           <Modal2 title={messages.guia} />
         </div>
       </div>
     </article>
-    <article class="md:w-1/3 mb-8 md:mb-0">
+    <article class="lg:w-1/3">
       <div>
         <div>
           <div>
-            <figure>
-              <img src="/imgs/paso2.avif" class="h-[215px]" alt="" />
-            </figure>
-          </div>
-          <div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="h-[500px]">
-          <h2 class="my-8 text-xl">
-            <strong>Paso 2:</strong> Simplifica tu Presupuesto con Finami
-          </h2>
-          <h3 class="mb-8 text-lg font-bold">
-            ¡Haz que tus finanzas sean fáciles!
-          </h3>
-          <p>
-            Conoce a Finami, tu nuevo amigo financiero. Esta app gratuita te
-            ayudará a llevar un control realista de tus gastos y simplificar tu
-            presupuesto.
-          </p>
-          <br />
-          <p class="font-bold">¿Por qué elegir Finami?</p>
-          <ul>
-            <li>Monitorea tus gastos fácilmente</li>
-            <li>Gestiona tu dinero de manera eficiente</li>
-            <li>Toma el control de tu situación financiera</li>
-          </ul>
-        </div>
-        <div class="flex justify-center w-full">
-          <Modal2 title={messages.descarga} />
-        </div>
-      </div>
-    </article>
-    <article class="md:w-1/3 mb-8 md:mb-0">
-      <div>
-        <div>
-          <div>
-            <figure>
+            <figure class="flex justify-center lg:block">
               <img src="/imgs/paso3.avif" class="h-[215px]" alt="" />
             </figure>
           </div>
@@ -104,29 +114,34 @@ import Modal2 from "../utils/Modal2.astro";
           </div>
         </div>
         <div>
-          <div class="h-[500px]">
+          <div class="lg:h-[580px] h-auto">
             <h2 class="my-8 text-xl">
-              <strong>Paso 3:</strong> Agenda tu Consulta Gratuita
+              <strong>Paso 3:</strong> Simplifica tu Presupuesto
             </h2>
             <h3 class="mb-8 text-lg font-bold">
-              ¡Tu éxito financiero comienza aquí!
+              ¡Haz que tus finanzas sean fáciles!
             </h3>
             <p>
-              La planificación efectiva es tu superpoder. Estoy aquí para
-              guiarte en cada paso, ofreciéndote soluciones personalizadas que
-              se adaptan a tus necesidades.
+              Es clave llevar un control realista de tus ingresos y gastos para
+              que puedas darle un propósito a tu dinero. Pero entiendo que esto
+              no es tarea fácil. Usa herramientas que te lo hagan fácil, con las
+              que te sientas cómodo. Te dejo FINAMI nuestra app de finanzas
+              gratuita como una de ellas
             </p>
             <br />
-            <p>
-              <span class="font-bold"
-                >Agenda tu cita gratuita y recibe asesoramiento especializado.
-              </span>Juntos, implementaremos un plan que te brindará la
-              tranquilidad de proteger lo que tienes y alcanzar tus metas. ¡No
-              esperes más! Da el primer paso hacia un futuro financiero seguro.
+            <p class="font-bold">¿Por qué elegir Finami?</p>
+            <ul>
+              <li>Monitorea tus gastos fácilmente</li>
+              <li>Gestiona tu dinero de manera eficiente</li>
+              <li>Toma el control de tu situación financiera</li>
+            </ul>
+            <p class="font-bold">
+              Descarga Finami ahora y comienza a transformar la forma en que
+              manejas tus finanzas.
             </p>
           </div>
-          <div class="flex justify-center w-full">
-            <Modal2 title={messages.consulta} />
+          <div class="flex justify-center w-full p-5 lg:p-0">
+            <Modal2 title={messages.descarga} />
           </div>
         </div>
       </div>
@@ -154,11 +169,11 @@ import Modal2 from "../utils/Modal2.astro";
   ul {
     padding-left: 2rem;
     list-style-type: circle;
-    margin-block: 2rem;
+    margin-block: 1rem;
   }
 
   ul li {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     background-position: 0 0;
     background-size: 1.6rem 1.6rem;
     background-repeat: no-repeat;

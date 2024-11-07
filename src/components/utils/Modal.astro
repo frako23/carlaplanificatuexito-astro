@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <button
   data-modal-target="default-modal"
   data-modal-toggle="default-modal"
-  class="hover:bg-darkBlue bg-middleBlue text-darkBlue hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+  class="hover:bg-darkBlue bg-middleBlue border border-darkBlue text-darkBlue hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-500 ease-in-out"
   type="button"
 >
   {title}
@@ -38,7 +38,7 @@ const { title } = Astro.props;
         </h3>
         <button
           type="button"
-          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          class="transition duration-500 ease-in-out hover:border hover:border-darkBlue text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
           data-modal-hide="default-modal"
         >
           <svg
@@ -49,7 +49,7 @@ const { title } = Astro.props;
             viewBox="0 0 14 14"
           >
             <path
-              stroke="currentColor"
+              stroke="#23284f"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
@@ -101,7 +101,7 @@ const { title } = Astro.props;
                         Please choose a password.
                       </p> -->
           </div>
-          <div class="mb-6">
+          <div class="">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
               for="message"
@@ -118,10 +118,10 @@ const { title } = Astro.props;
                       </p> -->
           </div>
           <div
-            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+            class="flex items-center px-4 md:p-5 rounded-b dark:border-gray-600"
           >
             <button
-              class="bg-darkBlue hover:bg-middleBlue hover:text-darkBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44"
+              class="transition duration-500 ease-in-out hover:border hover:border-darkBlue bg-darkBlue hover:bg-middleBlue hover:text-darkBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44"
               type="submit"
             >
               Enviar

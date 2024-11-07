@@ -60,7 +60,11 @@ const { title } = Astro.props;
       </div>
       <!-- Modal body -->
       <div>
-        <form class="bg-white shadow-md rounded px-16 pt-6 pb-8 mb-4">
+        <form
+          action="https://formspree.io/f/meoqglwd"
+          method="post"
+          class="bg-white shadow-md rounded px-16 pt-6 pb-8 mb-4"
+        >
           <h4 class="block text-gray-700 text-center font-bold mb-4">
             Contáctame hoy para obtener más información o para programar una
             cita.
@@ -68,13 +72,14 @@ const { title } = Astro.props;
           <div class="mb-4">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
-              for="username"
+              for="name"
             >
               Nombre
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="username"
+              id="name"
+              name="name"
               type="text"
               placeholder="Tú Nombre"
             />
@@ -82,14 +87,15 @@ const { title } = Astro.props;
           <div class="mb-4">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
-              for="password"
+              for="email"
             >
               Email
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="password"
+              id="email"
               type="email"
+              name="email"
               placeholder="Tú Email Aquí"
             />
             <!-- <p class="text-red-500 text-xs italic">
@@ -99,13 +105,14 @@ const { title } = Astro.props;
           <div class="mb-6">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
-              for="password"
+              for="message"
             >
               Mensaje
             </label>
             <textarea
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline h-28"
-              id="password"
+              id="message"
+              name="message"
               placeholder="Tú Mensaje Aquí"></textarea>
             <!-- <p class="text-red-500 text-xs italic">
                         Please choose a password.
@@ -116,7 +123,7 @@ const { title } = Astro.props;
           >
             <button
               class="bg-darkBlue hover:bg-middleBlue hover:text-darkBlue text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44"
-              type="button"
+              type="submit"
             >
               Enviar
             </button>

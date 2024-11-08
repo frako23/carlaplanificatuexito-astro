@@ -1,6 +1,6 @@
 {
   "content": [
-    "./src/**/*.{html,js}",
+    "./src/**/*.{html,js,tsx}",
     "./node_modules/tw-elements/js/**/*.js"
   ],
   "extends": "astro/tsconfigs/strict",

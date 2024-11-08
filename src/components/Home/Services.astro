@@ -1,5 +1,5 @@
 ---
-import Modal from "../utils/Modal.astro";
+import Modal from "../utils/Modal.tsx";
 
 import { messages } from "../../utils/const.ts";
 ---
@@ -66,7 +66,7 @@ import { messages } from "../../utils/const.ts";
 </section>
 
 <div class="flex justify-center p-10">
-  <Modal title={messages.asesorar} />
+  <Modal title={messages.asesorar} styleType="first" client:only="react" />
 </div>
 
 <style>
